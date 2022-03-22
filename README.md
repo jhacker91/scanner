@@ -1,6 +1,6 @@
-Open Terminal \n
-Change User to Root - sudo su \n
-Control if you have git - apt install git \n
+Open Terminal <br/>
+Change User to Root - sudo su 
+Control if you have git - apt install git 
 Git Repo - git clone https://github.com/jhacker91/vulnerability_web_scanner.git
 Control if you hacker zip - apt install zip
 Control if you have docker - apt install docker-compose
