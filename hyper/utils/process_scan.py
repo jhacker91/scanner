@@ -150,11 +150,7 @@ def read_scan(scan, slug, user_id):
         sleep(.5)
     return "Done"
 
-<<<<<<< HEAD
-
-=======
-
->>>>>>> 07faf68 (added dynamic path for scans)
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 @shared_task(bind=True)
 def scan_target(self, target, slug,ports, custom_ports, user_id):
@@ -169,8 +165,4 @@ def scan_target(self, target, slug,ports, custom_ports, user_id):
 
 def scan_all(target_list, slug,ports, custom_ports, user_id):
     for target in target_list:
-<<<<<<< HEAD
-        scan_target.delay(target, slug, ports, custom_ports)
-=======
         scan_target.delay(target, slug, ports, custom_ports, user_id)
->>>>>>> 785a6bf (fixed bug where users that werent admin didnt have scan results)

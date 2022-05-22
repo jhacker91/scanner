@@ -6,7 +6,11 @@ def get_data(cve):
     soup = BeautifulSoup(data.text, 'html.parser')
     description = soup.find(text="Description").find_next('p').text
     solution = soup.find(text="References").find_next('p').text
-    score = soup.findAll(text="CVSS v3")[2].find_next('span').text
+    try:
+        score = soup.findAll(text="CVSS v3")[2].find_next('span').text
+    except:
+        score = soup.findAll(text="CVSS v2")[2].find_next('span').text
+
     return(description,solution,score)
 
 description, solution, score = get_data('CVE-2019-7358')
