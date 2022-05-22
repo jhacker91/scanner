@@ -1,6 +1,15 @@
-INSTALL\\n Open Terminal apt-get update \\n apt-get upgrade \\n apt-get
-install docker-compose \\n sudo su \\n git clone
-https://github.com/jhacker91/vulnerability_web_scanner.git \\n cd
-vulnerability_web_scanner \\n docker-compose build \\n nano /etc/hosts
-\\n add 0.0.0.0 test-site \\n docker-compose up \\n Open Browser and go
-on http://test-site \\n Using default admin/admin to log in \\n
+**#INSTALL**
+
+Open Terminal <br />
+apt-get update <br />
+apt-get upgrade <br />
+apt-get install docker-compose <br />
+sudo su <br />
+git clone https://github.com/jhacker91/vulnerability_web_scanner.git <br /> 
+cd vulnerability_web_scanner <br />
+docker-compose build <br />
+nano /etc/hosts <br />
+add 0.0.0.0 test-site and save<br />
+docker-compose up  <br />
+Open Browser and go on http://test-site  <br />
+Using default admin/admin to log in <br />
